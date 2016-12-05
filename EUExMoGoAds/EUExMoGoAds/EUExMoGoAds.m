@@ -114,7 +114,7 @@
  */
 - (void)adMoGoDidStartAd:(AdMoGoView *)adMoGoView
 {
-    NSLog(@"广告开始请求回调");
+    ACLogDebug(@"广告开始请求回调");
 }
 
 /**
@@ -122,7 +122,7 @@
  */
 - (void)adMoGoDidReceiveAd:(AdMoGoView *)adMoGoView
 {
-    NSLog(@"广告接收成功回调");
+    ACLogDebug(@"广告接收成功回调");
 }
 
 /**
@@ -130,7 +130,7 @@
  */
 - (void)adMoGoDidFailToReceiveAd:(AdMoGoView *)adMoGoView didFailWithError:(NSError *)error
 {
-    NSLog(@"广告接收失败回调");
+    ACLogDebug(@"广告接收失败回调");
 }
 
 /**
@@ -138,7 +138,7 @@
  */
 - (void)adMoGoClickAd:(AdMoGoView *)adMoGoView
 {
-    NSLog(@"点击广告回调");
+    ACLogDebug(@"点击广告回调");
 }
 
 /**
@@ -147,7 +147,7 @@
  */
 - (void)adMoGoDeleteAd:(AdMoGoView *)adMoGoView
 {
-    NSLog(@"广告关闭回调");
+    ACLogDebug(@"广告关闭回调");
 }
 
 #pragma mark - AdMoGoWebBrowserControllerUserDelegate delegate
@@ -157,7 +157,7 @@
  */
 - (void)webBrowserWillAppear
 {
-    NSLog(@"浏览器将要展示");
+    ACLogDebug(@"浏览器将要展示");
 }
 
 /*
@@ -165,7 +165,7 @@
  */
 - (void)webBrowserDidAppear
 {
-    NSLog(@"浏览器已经展示");
+    ACLogDebug(@"浏览器已经展示");
 }
 
 /*
@@ -173,7 +173,7 @@
  */
 - (void)webBrowserWillClosed
 {
-    NSLog(@"浏览器将要关闭");
+    ACLogDebug(@"浏览器将要关闭");
 }
 
 /*
@@ -181,7 +181,7 @@
  */
 - (void)webBrowserDidClosed
 {
-    NSLog(@"浏览器已经关闭");
+    ACLogDebug(@"浏览器已经关闭");
 }
 
 - (void)webBrowserShare:(NSString *)url{
